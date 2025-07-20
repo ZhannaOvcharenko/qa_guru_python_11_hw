@@ -29,7 +29,7 @@ def setup_browser():
     browser.driver.maximize_window()
     browser.config.timeout = 10
 
-    yield
+    yield browser
 
     attach.add_screenshot(browser)
     attach.add_logs(browser)
